@@ -1,124 +1,75 @@
-* {
-    padding: 0;
-    margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background-image: url('/login.jpg');
-   
+.register{
+    min-height:100vh;
+    background:url('/login.jpg') center/cover no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
+
 .register h1{
-    color:rgb(193, 193, 193);
-    position: relative;
-    left: 35vw;
-    top: 18vh;
-
+    color:white;
+    margin-bottom:20px;
+    text-align:center;
 }
+
 .register input{
-    width: 20vw;
-    height: 5vh;
-    display: flex;
-    flex-direction: column;
-    margin:5px;
-    position: relative;
-    top: 18vh;
-    left: 36vw;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 3px;
-   color:rgb(198, 198, 198);
-   font-weight: bold;
-   font-style: italic;
-   background-color: black;
-   font-size: large;
+    width:min(400px,90vw);
+    height:50px;
+    margin:6px 0;
+    text-align:center;
+    border:1px solid black;
+    border-radius:5px;
+    background:black;
+    color:white;
+    font-size:16px;
 }
-.register input:focus {
-    border: 1px solid black;
-    outline: none;
-    box-shadow: none;
-}
-.register button{
-    width: 17vw;
-    height: 5vh;
-    position: relative;
-    top: 15vh;
-    left: 36vw;
-    background-color: red;
-    color:black;
-    outline: none;
-    box-shadow: none;
-    font-size: large;
-    font-weight: bold;
-    font-style: italic;
-    border: 1px solid black;
-}
-.register h2{
-    color:rgb(193, 193, 193);
-    position: relative;
-    top: 18vh;
-    left: 37vw;
 
+.register input:focus{
+    outline:none;
 }
-.register .login{
-     color:red;
-    position: relative;
-    top: 15vh;
-    left: 52vw;
-    text-decoration: none;
-    font-size: x-large;
-    font-weight: bold;
-    font-style: italic;
-}
-.register h3{
-    color:red;
-    position: relative;
-    top: 20vh;
-    left: 41vw;
-    font-size: x-large;
-    font-weight: bold;
-}
-body{
-    overflow: hidden;
-}
+
 .register span{
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    position: relative;
-    top: 13vh;
-    left: 57vw;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    margin:4px 0;
 }
-.register .confirm{
-    width: 20vw;
-    height: 5vh;
-    display: flex;
-    flex-direction: column;
-    margin:5px;
-    position: relative;
-    top: 14vh;
-    left: 36vw;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 3px;
-   color:rgb(198, 198, 198);
-   font-weight: bold;
-   font-style: italic;
-   background-color: black;
-   font-size: large;
+
+.register button{
+    width:min(400px,90vw);
+    height:50px;
+    background:red;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
 }
-.register .confirmpass{
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    position: relative;
-    top: 9vh;
-    left: 57vw;
+
+.register h2{
+    color:white;
+    margin-top:20px;
 }
+
+.register .login{
+    color:red;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.register h3,
 .register h4{
     color:red;
-    position: absolute;
-    top: 35vh;
-    left: 58vw;
-    font-size: x-large;
-    font-weight: bold;
+    text-align:center;
+    margin-top:10px;
 }

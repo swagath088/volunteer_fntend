@@ -1,87 +1,74 @@
 *{
-    padding: 0;
-    margin: 0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-body{
-    background-image: url('/login.jpg');
-}
-.loginpage h1{
-     color:rgb(193, 193, 193);
-    position: relative;
-    left: 35vw;
-    top: 17vh;
-}
-.loginpage input{
-    width: 20vw;
-    height: 5vh;
-    display: flex;
-    flex-direction: column;
-    margin:5px;
-    position: relative;
-    top: 18vh;
-    left: 36vw;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 3px;
-   color:rgb(198, 198, 198);
-   font-weight: bold;
-   font-style: italic;
-   background-color: black;
-   font-size: large;
-}
-.loginpage input:focus {
-    border: 1px solid black;
-    outline: none;
-    box-shadow: none;
-}
-.loginpage button{
-    width: 18vw;
-    height: 5vh;
-    position: relative;
-    top: 19vh;
-    left: 35vw;
-    background-color: red;
-    color:black;
-    outline: none;
-    box-shadow: none;
-    font-size: large;
-    font-weight: bold;
-    font-style: italic;
-    border: 1px solid black;
-}
-.loginpage h2{
-    color:rgb(193, 193, 193);
-    position: relative;
-    top: 21vh;
-    left: 37vw;
 
+.loginpage{
+    min-height:100vh;
+    background:url('/login.jpg') center/cover no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
+
+.loginpage h1{
+    color:white;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.loginpage input{
+    width:min(400px,90vw);
+    height:50px;
+    margin:8px 0;
+    text-align:center;
+    border:1px solid black;
+    border-radius:5px;
+    background:black;
+    color:white;
+    font-size:16px;
+}
+
+.loginpage input:focus{
+    outline:none;
+}
+
+.loginpage span{
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    margin:5px 0;
+}
+
+.loginpage button{
+    width:min(400px,90vw);
+    height:50px;
+    background:red;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.loginpage h2{
+    color:white;
+    margin-top:20px;
+}
+
 .loginpage .registerpage{
-     color:red;
-    position: relative;
-    top: 18vh;
-    left: 50vw;
-    text-decoration: none;
-    font-size: x-large;
-    font-weight: bold;
-    font-style: italic;
+    color:red;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:10px;
 }
+
 .loginpage h3{
     color:red;
-    position: relative;
-    top: 20vh;
-    left: 39vw;
-    font-size: x-large;
-    font-weight: bold;
-}
-body{
-    overflow: hidden;
-}
-.loginpage span{
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    position: relative;
-    top: 13vh;
-    left: 57vw;
+    text-align:center;
+    margin-top:15px;
 }
