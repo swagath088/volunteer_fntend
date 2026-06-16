@@ -90,7 +90,10 @@ function Register(){
             <h1>Volunteer Registration</h1>
             <input type="text" name="" id="" placeholder="full name" ref={usernameref} required onFocus={()=>setitem('')}/>
             <input type="email" name="" id=""  placeholder="email"ref={emailref} required onFocus={()=>setitem('')}/>
-            <input type="tel" name="" id="" placeholder="mobile no" ref={mobileref} required  onChange={(e)=>{e.target.value=e.target.value.replace(/\D/g,'');}} onFocus={()=>setitem('') }onFocus={()=>setverify('') }/>
+            <input type="tel" name="" id="" placeholder="mobile no" ref={mobileref} required  onChange={(e)=>{e.target.value=e.target.value.replace(/\D/g,'');}} onFocus={()=>{
+    setitem('');
+    setverify('');
+}}/>
             <input type="text" name="" id="" placeholder="city" ref={cityref} required onFocus={()=>setitem('')}/>
             <input type="text" name="" id="" placeholder="skills" ref={skillsref} required onFocus={()=>setitem('')}/>
             <input type={showpassword ? 'text':'password'} name="" id="" placeholder="password" ref={passwordref} required onFocus={()=>setitem('')}  />

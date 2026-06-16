@@ -9,7 +9,7 @@ function Login(){
     const [item,setitem]=useState('');
     const navigate=useNavigate();
     const[showpassword,setshowpassword]=useState(false);
-    const[loading,setloading]=useState('false');
+    const[loading,setloading]=useState(false);
     const eye=()=>{
         setshowpassword(!showpassword)
     }
