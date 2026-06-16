@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin:0
+}
+.list h1{
+   color: white; 
+   font-size: xx-large;
+   font-weight: bolder;
+   position: relative;
+   top: 2vh;
+   text-align: center;
+}
+.list table{
+    border-collapse: collapse;
+    width: 100%;;
+    margin-top: 5vh;
+}
+.list th,
+.list td{
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+.list th{
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+}
+body{
+    overflow: hidden;
+    
+}
+.list .logout{
+    color: red;
+    text-align: center;
+    position: absolute;
+    top: 2vh;
+    left: 85vw;
+    font-size: x-large;
+   font-weight: bolder;
+   text-decoration: none;
+}
+.list{
+    background-image: url('/view.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}

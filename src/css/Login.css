@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('/login.jpg');
+}
+.loginpage h1{
+     color:rgb(193, 193, 193);
+    position: relative;
+    left: 35vw;
+    top: 17vh;
+}
+.loginpage input{
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    margin:5px;
+    position: relative;
+    top: 18vh;
+    left: 36vw;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+   color:rgb(198, 198, 198);
+   font-weight: bold;
+   font-style: italic;
+   background-color: black;
+   font-size: large;
+}
+.loginpage input:focus {
+    border: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+.loginpage button{
+    width: 18vw;
+    height: 5vh;
+    position: relative;
+    top: 19vh;
+    left: 35vw;
+    background-color: red;
+    color:black;
+    outline: none;
+    box-shadow: none;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    border: 1px solid black;
+}
+.loginpage h2{
+    color:rgb(193, 193, 193);
+    position: relative;
+    top: 21vh;
+    left: 37vw;
+
+}
+.loginpage .registerpage{
+     color:red;
+    position: relative;
+    top: 18vh;
+    left: 50vw;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+}
+.loginpage h3{
+    color:red;
+    position: relative;
+    top: 20vh;
+    left: 39vw;
+    font-size: x-large;
+    font-weight: bold;
+}
+body{
+    overflow: hidden;
+}
+.loginpage span{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 13vh;
+    left: 57vw;
+}
